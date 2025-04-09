@@ -201,7 +201,7 @@ table <- modelsummary(
 ## Add header above the table
 table %>%
   tab_spanner(
-    label = "Arrests",
+    label = "Searches",
     columns = c(`Overall`, `Asian/pacific islander`, `Black`, `Hispanic`, `Other`)
   )
 ```
