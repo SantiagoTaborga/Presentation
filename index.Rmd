@@ -190,7 +190,7 @@ mods <-
 table <- modelsummary(
   mods,
   coef_rename = c(
-    "subject_racewhite" = "White",
+    "subject_racewhite" = "Race",
     "subject_raceother" = "Other"
   ),
   gof_map = c('nobs'),
@@ -201,7 +201,7 @@ table <- modelsummary(
 ## Add header above the table
 table %>%
   tab_spanner(
-    label = "Race",
+    label = "Arrests",
     columns = c(`Overall`, `Asian/pacific islander`, `Black`, `Hispanic`, `Other`)
   )
 ```
