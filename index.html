@@ -59,6 +59,8 @@ Studying racial profiling in the DMV area has the potential to reveal important 
     
     - The Project collects traffic stop information provided by state and local police departments in 42 states, wherever it was made available.
     
+    -  Each jurisdiction provided stop data in idiosyncratic formats with varying levels of specificity due to the reporting requirements of each police department.
+    
     
   - **What was done with it**
   
@@ -66,32 +68,47 @@ Studying racial profiling in the DMV area has the potential to reveal important 
     
     - 8,505,026 observations
     
+  - **Summary** 
+  
+    - *Unit of Analysis:* traffic stops
+    
+    - *Independent Variable:* Subject's Race
+    
+    - *Dependent Variable:* Search Conducted
+    
+    - *Time Period:* 2006-2016
+    
     
 ---
-# Analysis Pt. 1
+# Hispanics Are Searched More Frequently
 
 &lt;img src="index_files/figure-html/unnamed-chunk-1-1.png" style="display: block; margin: auto;" /&gt;
 
 ---
-# Analysis Pt. 1
+# What Does A Comparison By Year Tell Us?
 
-<div id="djjwsikgwn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#djjwsikgwn table {
+&lt;img src="index_files/figure-html/unnamed-chunk-2-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+# Highlighted Rows = Asians/Pacific Islanders Being Searched the Most in That Year
+
+<div id="etjyaoeklx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#etjyaoeklx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#djjwsikgwn thead, #djjwsikgwn tbody, #djjwsikgwn tfoot, #djjwsikgwn tr, #djjwsikgwn td, #djjwsikgwn th {
+#etjyaoeklx thead, #etjyaoeklx tbody, #etjyaoeklx tfoot, #etjyaoeklx tr, #etjyaoeklx td, #etjyaoeklx th {
   border-style: none;
 }
 
-#djjwsikgwn p {
+#etjyaoeklx p {
   margin: 0;
   padding: 0;
 }
 
-#djjwsikgwn .gt_table {
+#etjyaoeklx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -117,12 +134,12 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-left-color: #D3D3D3;
 }
 
-#djjwsikgwn .gt_caption {
+#etjyaoeklx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#djjwsikgwn .gt_title {
+#etjyaoeklx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -134,7 +151,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-width: 0;
 }
 
-#djjwsikgwn .gt_subtitle {
+#etjyaoeklx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -146,7 +163,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-top-width: 0;
 }
 
-#djjwsikgwn .gt_heading {
+#etjyaoeklx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -158,13 +175,13 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#djjwsikgwn .gt_bottom_border {
+#etjyaoeklx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#djjwsikgwn .gt_col_headings {
+#etjyaoeklx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -179,7 +196,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#djjwsikgwn .gt_col_heading {
+#etjyaoeklx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -199,7 +216,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   overflow-x: hidden;
 }
 
-#djjwsikgwn .gt_column_spanner_outer {
+#etjyaoeklx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -211,15 +228,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 4px;
 }
 
-#djjwsikgwn .gt_column_spanner_outer:first-child {
+#etjyaoeklx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#djjwsikgwn .gt_column_spanner_outer:last-child {
+#etjyaoeklx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#djjwsikgwn .gt_column_spanner {
+#etjyaoeklx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -231,11 +248,11 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   width: 100%;
 }
 
-#djjwsikgwn .gt_spanner_row {
+#etjyaoeklx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#djjwsikgwn .gt_group_heading {
+#etjyaoeklx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -261,7 +278,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   text-align: left;
 }
 
-#djjwsikgwn .gt_empty_group_heading {
+#etjyaoeklx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -276,15 +293,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   vertical-align: middle;
 }
 
-#djjwsikgwn .gt_from_md > :first-child {
+#etjyaoeklx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#djjwsikgwn .gt_from_md > :last-child {
+#etjyaoeklx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#djjwsikgwn .gt_row {
+#etjyaoeklx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -303,7 +320,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   overflow-x: hidden;
 }
 
-#djjwsikgwn .gt_stub {
+#etjyaoeklx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -316,533 +333,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#djjwsikgwn .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#djjwsikgwn .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#djjwsikgwn .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#djjwsikgwn .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#djjwsikgwn .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#djjwsikgwn .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#djjwsikgwn .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#djjwsikgwn .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#djjwsikgwn .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#djjwsikgwn .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#djjwsikgwn .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#djjwsikgwn .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#djjwsikgwn .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#djjwsikgwn .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#djjwsikgwn .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#djjwsikgwn .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#djjwsikgwn .gt_left {
-  text-align: left;
-}
-
-#djjwsikgwn .gt_center {
-  text-align: center;
-}
-
-#djjwsikgwn .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#djjwsikgwn .gt_font_normal {
-  font-weight: normal;
-}
-
-#djjwsikgwn .gt_font_bold {
-  font-weight: bold;
-}
-
-#djjwsikgwn .gt_font_italic {
-  font-style: italic;
-}
-
-#djjwsikgwn .gt_super {
-  font-size: 65%;
-}
-
-#djjwsikgwn .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#djjwsikgwn .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#djjwsikgwn .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#djjwsikgwn .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#djjwsikgwn .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#djjwsikgwn .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#djjwsikgwn .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#djjwsikgwn .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#djjwsikgwn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    <tr class="gt_col_headings gt_spanner_row">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" scope="col" id="a-"> </th>
-      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="5" scope="colgroup" id="Searches">
-        <div class="gt_column_spanner">Searches</div>
-      </th>
-    </tr>
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Overall">Overall</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Asian/pacific-islander">Asian/pacific islander</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Black">Black</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Hispanic">Hispanic</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Other">Other</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers=" " class="gt_row gt_left">(Intercept)</td>
-<td headers="Overall" class="gt_row gt_center">0.026***</td>
-<td headers="Asian/pacific islander" class="gt_row gt_center">0.016***</td>
-<td headers="Black" class="gt_row gt_center">0.027***</td>
-<td headers="Hispanic" class="gt_row gt_center">0.030***</td>
-<td headers="Other" class="gt_row gt_center">0.021***</td></tr>
-    <tr><td headers=" " class="gt_row gt_left"></td>
-<td headers="Overall" class="gt_row gt_center">(0.000)</td>
-<td headers="Asian/pacific islander" class="gt_row gt_center">(0.000)</td>
-<td headers="Black" class="gt_row gt_center">(0.000)</td>
-<td headers="Hispanic" class="gt_row gt_center">(0.000)</td>
-<td headers="Other" class="gt_row gt_center">(0.000)</td></tr>
-    <tr><td headers=" " class="gt_row gt_left">Race</td>
-<td headers="Overall" class="gt_row gt_center">-0.005***</td>
-<td headers="Asian/pacific islander" class="gt_row gt_center">0.005***</td>
-<td headers="Black" class="gt_row gt_center">-0.006***</td>
-<td headers="Hispanic" class="gt_row gt_center">-0.009***</td>
-<td headers="Other" class="gt_row gt_center"></td></tr>
-    <tr><td headers=" " class="gt_row gt_left"></td>
-<td headers="Overall" class="gt_row gt_center">(0.000)</td>
-<td headers="Asian/pacific islander" class="gt_row gt_center">(0.000)</td>
-<td headers="Black" class="gt_row gt_center">(0.000)</td>
-<td headers="Hispanic" class="gt_row gt_center">(0.000)</td>
-<td headers="Other" class="gt_row gt_center"></td></tr>
-    <tr><td headers=" " class="gt_row gt_left">Other</td>
-<td headers="Overall" class="gt_row gt_center"></td>
-<td headers="Asian/pacific islander" class="gt_row gt_center"></td>
-<td headers="Black" class="gt_row gt_center"></td>
-<td headers="Hispanic" class="gt_row gt_center"></td>
-<td headers="Other" class="gt_row gt_center">-0.004***</td></tr>
-    <tr><td headers=" " class="gt_row gt_left" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000;"></td>
-<td headers="Overall" class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000;"></td>
-<td headers="Asian/pacific islander" class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000;"></td>
-<td headers="Black" class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000;"></td>
-<td headers="Hispanic" class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000;"></td>
-<td headers="Other" class="gt_row gt_center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #000000;">(0.000)</td></tr>
-    <tr><td headers=" " class="gt_row gt_left">Num.Obs.</td>
-<td headers="Overall" class="gt_row gt_center">8505026</td>
-<td headers="Asian/pacific islander" class="gt_row gt_center">2630749</td>
-<td headers="Black" class="gt_row gt_center">3794670</td>
-<td headers="Hispanic" class="gt_row gt_center">2790219</td>
-<td headers="Other" class="gt_row gt_center">2617556</td></tr>
-  </tbody>
-  <tfoot class="gt_sourcenotes">
-    <tr>
-      <td class="gt_sourcenote" colspan="6">+ p &lt; 0.1, * p &lt; 0.05, ** p &lt; 0.01, *** p &lt; 0.001</td>
-    </tr>
-  </tfoot>
-  
-</table>
-</div>
-
----
-# Analysis Pt. 2
-
-&lt;img src="index_files/figure-html/unnamed-chunk-3-1.png" style="display: block; margin: auto;" /&gt;
-
----
-# Analysis Pt. 2
-
-<div id="vqmczruytt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#vqmczruytt table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#vqmczruytt thead, #vqmczruytt tbody, #vqmczruytt tfoot, #vqmczruytt tr, #vqmczruytt td, #vqmczruytt th {
-  border-style: none;
-}
-
-#vqmczruytt p {
-  margin: 0;
-  padding: 0;
-}
-
-#vqmczruytt .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#vqmczruytt .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#vqmczruytt .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#vqmczruytt .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#vqmczruytt .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#vqmczruytt .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#vqmczruytt .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#vqmczruytt .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#vqmczruytt .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#vqmczruytt .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#vqmczruytt .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#vqmczruytt .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#vqmczruytt .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#vqmczruytt .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#vqmczruytt .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#vqmczruytt .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#vqmczruytt .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#vqmczruytt .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#vqmczruytt .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#vqmczruytt .gt_stub_row_group {
+#etjyaoeklx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -856,15 +347,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   vertical-align: top;
 }
 
-#vqmczruytt .gt_row_group_first td {
+#etjyaoeklx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#vqmczruytt .gt_row_group_first th {
+#etjyaoeklx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#vqmczruytt .gt_summary_row {
+#etjyaoeklx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -874,16 +365,16 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#vqmczruytt .gt_first_summary_row {
+#etjyaoeklx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#vqmczruytt .gt_first_summary_row.thick {
+#etjyaoeklx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#vqmczruytt .gt_last_summary_row {
+#etjyaoeklx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -893,7 +384,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#vqmczruytt .gt_grand_summary_row {
+#etjyaoeklx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -903,7 +394,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#vqmczruytt .gt_first_grand_summary_row {
+#etjyaoeklx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -913,7 +404,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-top-color: #D3D3D3;
 }
 
-#vqmczruytt .gt_last_grand_summary_row_top {
+#etjyaoeklx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -923,11 +414,11 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#vqmczruytt .gt_striped {
+#etjyaoeklx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vqmczruytt .gt_table_body {
+#etjyaoeklx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -936,7 +427,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#vqmczruytt .gt_footnotes {
+#etjyaoeklx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -950,7 +441,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#vqmczruytt .gt_footnote {
+#etjyaoeklx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -959,7 +450,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#vqmczruytt .gt_sourcenotes {
+#etjyaoeklx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -973,7 +464,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#vqmczruytt .gt_sourcenote {
+#etjyaoeklx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -981,72 +472,72 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#vqmczruytt .gt_left {
+#etjyaoeklx .gt_left {
   text-align: left;
 }
 
-#vqmczruytt .gt_center {
+#etjyaoeklx .gt_center {
   text-align: center;
 }
 
-#vqmczruytt .gt_right {
+#etjyaoeklx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vqmczruytt .gt_font_normal {
+#etjyaoeklx .gt_font_normal {
   font-weight: normal;
 }
 
-#vqmczruytt .gt_font_bold {
+#etjyaoeklx .gt_font_bold {
   font-weight: bold;
 }
 
-#vqmczruytt .gt_font_italic {
+#etjyaoeklx .gt_font_italic {
   font-style: italic;
 }
 
-#vqmczruytt .gt_super {
+#etjyaoeklx .gt_super {
   font-size: 65%;
 }
 
-#vqmczruytt .gt_footnote_marks {
+#etjyaoeklx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#vqmczruytt .gt_asterisk {
+#etjyaoeklx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#vqmczruytt .gt_indent_1 {
+#etjyaoeklx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#vqmczruytt .gt_indent_2 {
+#etjyaoeklx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#vqmczruytt .gt_indent_3 {
+#etjyaoeklx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#vqmczruytt .gt_indent_4 {
+#etjyaoeklx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#vqmczruytt .gt_indent_5 {
+#etjyaoeklx .gt_indent_5 {
   text-indent: 25px;
 }
 
-#vqmczruytt .katex-display {
+#etjyaoeklx .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#vqmczruytt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#etjyaoeklx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1090,25 +581,25 @@ Studying racial profiling in the DMV area has the potential to reveal important 
 </table>
 </div>
 ---
-# Analysis Pt. 2
+# Highlighted Rows = Blacks Being Searched the Most in That Year
 
-<div id="oxtdvzejgs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#oxtdvzejgs table {
+<div id="idbachuhdp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#idbachuhdp table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#oxtdvzejgs thead, #oxtdvzejgs tbody, #oxtdvzejgs tfoot, #oxtdvzejgs tr, #oxtdvzejgs td, #oxtdvzejgs th {
+#idbachuhdp thead, #idbachuhdp tbody, #idbachuhdp tfoot, #idbachuhdp tr, #idbachuhdp td, #idbachuhdp th {
   border-style: none;
 }
 
-#oxtdvzejgs p {
+#idbachuhdp p {
   margin: 0;
   padding: 0;
 }
 
-#oxtdvzejgs .gt_table {
+#idbachuhdp .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1134,12 +625,12 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-left-color: #D3D3D3;
 }
 
-#oxtdvzejgs .gt_caption {
+#idbachuhdp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#oxtdvzejgs .gt_title {
+#idbachuhdp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1151,7 +642,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-width: 0;
 }
 
-#oxtdvzejgs .gt_subtitle {
+#idbachuhdp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1163,7 +654,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-top-width: 0;
 }
 
-#oxtdvzejgs .gt_heading {
+#idbachuhdp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1175,13 +666,13 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#oxtdvzejgs .gt_bottom_border {
+#idbachuhdp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#oxtdvzejgs .gt_col_headings {
+#idbachuhdp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1196,7 +687,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#oxtdvzejgs .gt_col_heading {
+#idbachuhdp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1216,7 +707,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   overflow-x: hidden;
 }
 
-#oxtdvzejgs .gt_column_spanner_outer {
+#idbachuhdp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1228,15 +719,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 4px;
 }
 
-#oxtdvzejgs .gt_column_spanner_outer:first-child {
+#idbachuhdp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#oxtdvzejgs .gt_column_spanner_outer:last-child {
+#idbachuhdp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#oxtdvzejgs .gt_column_spanner {
+#idbachuhdp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1248,11 +739,11 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   width: 100%;
 }
 
-#oxtdvzejgs .gt_spanner_row {
+#idbachuhdp .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#oxtdvzejgs .gt_group_heading {
+#idbachuhdp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1278,7 +769,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   text-align: left;
 }
 
-#oxtdvzejgs .gt_empty_group_heading {
+#idbachuhdp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1293,15 +784,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   vertical-align: middle;
 }
 
-#oxtdvzejgs .gt_from_md > :first-child {
+#idbachuhdp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#oxtdvzejgs .gt_from_md > :last-child {
+#idbachuhdp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#oxtdvzejgs .gt_row {
+#idbachuhdp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1320,7 +811,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   overflow-x: hidden;
 }
 
-#oxtdvzejgs .gt_stub {
+#idbachuhdp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1333,7 +824,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#oxtdvzejgs .gt_stub_row_group {
+#idbachuhdp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1347,15 +838,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   vertical-align: top;
 }
 
-#oxtdvzejgs .gt_row_group_first td {
+#idbachuhdp .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#oxtdvzejgs .gt_row_group_first th {
+#idbachuhdp .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#oxtdvzejgs .gt_summary_row {
+#idbachuhdp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1365,16 +856,16 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#oxtdvzejgs .gt_first_summary_row {
+#idbachuhdp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#oxtdvzejgs .gt_first_summary_row.thick {
+#idbachuhdp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#oxtdvzejgs .gt_last_summary_row {
+#idbachuhdp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1384,7 +875,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#oxtdvzejgs .gt_grand_summary_row {
+#idbachuhdp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1394,7 +885,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#oxtdvzejgs .gt_first_grand_summary_row {
+#idbachuhdp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1404,7 +895,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-top-color: #D3D3D3;
 }
 
-#oxtdvzejgs .gt_last_grand_summary_row_top {
+#idbachuhdp .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1414,11 +905,11 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#oxtdvzejgs .gt_striped {
+#idbachuhdp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#oxtdvzejgs .gt_table_body {
+#idbachuhdp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1427,7 +918,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#oxtdvzejgs .gt_footnotes {
+#idbachuhdp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1441,7 +932,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#oxtdvzejgs .gt_footnote {
+#idbachuhdp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1450,7 +941,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#oxtdvzejgs .gt_sourcenotes {
+#idbachuhdp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1464,7 +955,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#oxtdvzejgs .gt_sourcenote {
+#idbachuhdp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1472,72 +963,72 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#oxtdvzejgs .gt_left {
+#idbachuhdp .gt_left {
   text-align: left;
 }
 
-#oxtdvzejgs .gt_center {
+#idbachuhdp .gt_center {
   text-align: center;
 }
 
-#oxtdvzejgs .gt_right {
+#idbachuhdp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#oxtdvzejgs .gt_font_normal {
+#idbachuhdp .gt_font_normal {
   font-weight: normal;
 }
 
-#oxtdvzejgs .gt_font_bold {
+#idbachuhdp .gt_font_bold {
   font-weight: bold;
 }
 
-#oxtdvzejgs .gt_font_italic {
+#idbachuhdp .gt_font_italic {
   font-style: italic;
 }
 
-#oxtdvzejgs .gt_super {
+#idbachuhdp .gt_super {
   font-size: 65%;
 }
 
-#oxtdvzejgs .gt_footnote_marks {
+#idbachuhdp .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#oxtdvzejgs .gt_asterisk {
+#idbachuhdp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#oxtdvzejgs .gt_indent_1 {
+#idbachuhdp .gt_indent_1 {
   text-indent: 5px;
 }
 
-#oxtdvzejgs .gt_indent_2 {
+#idbachuhdp .gt_indent_2 {
   text-indent: 10px;
 }
 
-#oxtdvzejgs .gt_indent_3 {
+#idbachuhdp .gt_indent_3 {
   text-indent: 15px;
 }
 
-#oxtdvzejgs .gt_indent_4 {
+#idbachuhdp .gt_indent_4 {
   text-indent: 20px;
 }
 
-#oxtdvzejgs .gt_indent_5 {
+#idbachuhdp .gt_indent_5 {
   text-indent: 25px;
 }
 
-#oxtdvzejgs .katex-display {
+#idbachuhdp .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#oxtdvzejgs div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#idbachuhdp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1581,25 +1072,25 @@ Studying racial profiling in the DMV area has the potential to reveal important 
 </table>
 </div>
 ---
-# Analysis Pt. 2
+# Highlighted Rows = Hispanics Being Searched the Most in That Year
 
-<div id="cqdsoivzni" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#cqdsoivzni table {
+<div id="cosjuyqntc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#cosjuyqntc table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#cqdsoivzni thead, #cqdsoivzni tbody, #cqdsoivzni tfoot, #cqdsoivzni tr, #cqdsoivzni td, #cqdsoivzni th {
+#cosjuyqntc thead, #cosjuyqntc tbody, #cosjuyqntc tfoot, #cosjuyqntc tr, #cosjuyqntc td, #cosjuyqntc th {
   border-style: none;
 }
 
-#cqdsoivzni p {
+#cosjuyqntc p {
   margin: 0;
   padding: 0;
 }
 
-#cqdsoivzni .gt_table {
+#cosjuyqntc .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1625,12 +1116,12 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-left-color: #D3D3D3;
 }
 
-#cqdsoivzni .gt_caption {
+#cosjuyqntc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#cqdsoivzni .gt_title {
+#cosjuyqntc .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1642,7 +1133,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-width: 0;
 }
 
-#cqdsoivzni .gt_subtitle {
+#cosjuyqntc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1654,7 +1145,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-top-width: 0;
 }
 
-#cqdsoivzni .gt_heading {
+#cosjuyqntc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1666,13 +1157,13 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#cqdsoivzni .gt_bottom_border {
+#cosjuyqntc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#cqdsoivzni .gt_col_headings {
+#cosjuyqntc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1687,7 +1178,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#cqdsoivzni .gt_col_heading {
+#cosjuyqntc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1707,7 +1198,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   overflow-x: hidden;
 }
 
-#cqdsoivzni .gt_column_spanner_outer {
+#cosjuyqntc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1719,15 +1210,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 4px;
 }
 
-#cqdsoivzni .gt_column_spanner_outer:first-child {
+#cosjuyqntc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#cqdsoivzni .gt_column_spanner_outer:last-child {
+#cosjuyqntc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#cqdsoivzni .gt_column_spanner {
+#cosjuyqntc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1739,11 +1230,11 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   width: 100%;
 }
 
-#cqdsoivzni .gt_spanner_row {
+#cosjuyqntc .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#cqdsoivzni .gt_group_heading {
+#cosjuyqntc .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1769,7 +1260,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   text-align: left;
 }
 
-#cqdsoivzni .gt_empty_group_heading {
+#cosjuyqntc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1784,15 +1275,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   vertical-align: middle;
 }
 
-#cqdsoivzni .gt_from_md > :first-child {
+#cosjuyqntc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#cqdsoivzni .gt_from_md > :last-child {
+#cosjuyqntc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#cqdsoivzni .gt_row {
+#cosjuyqntc .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1811,7 +1302,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   overflow-x: hidden;
 }
 
-#cqdsoivzni .gt_stub {
+#cosjuyqntc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1824,7 +1315,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#cqdsoivzni .gt_stub_row_group {
+#cosjuyqntc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1838,15 +1329,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   vertical-align: top;
 }
 
-#cqdsoivzni .gt_row_group_first td {
+#cosjuyqntc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#cqdsoivzni .gt_row_group_first th {
+#cosjuyqntc .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#cqdsoivzni .gt_summary_row {
+#cosjuyqntc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1856,16 +1347,16 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#cqdsoivzni .gt_first_summary_row {
+#cosjuyqntc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#cqdsoivzni .gt_first_summary_row.thick {
+#cosjuyqntc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#cqdsoivzni .gt_last_summary_row {
+#cosjuyqntc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1875,7 +1366,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#cqdsoivzni .gt_grand_summary_row {
+#cosjuyqntc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1885,7 +1376,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#cqdsoivzni .gt_first_grand_summary_row {
+#cosjuyqntc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1895,7 +1386,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-top-color: #D3D3D3;
 }
 
-#cqdsoivzni .gt_last_grand_summary_row_top {
+#cosjuyqntc .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1905,11 +1396,11 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#cqdsoivzni .gt_striped {
+#cosjuyqntc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#cqdsoivzni .gt_table_body {
+#cosjuyqntc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1918,7 +1409,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#cqdsoivzni .gt_footnotes {
+#cosjuyqntc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1932,7 +1423,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#cqdsoivzni .gt_footnote {
+#cosjuyqntc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1941,7 +1432,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#cqdsoivzni .gt_sourcenotes {
+#cosjuyqntc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1955,7 +1446,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#cqdsoivzni .gt_sourcenote {
+#cosjuyqntc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1963,72 +1454,72 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#cqdsoivzni .gt_left {
+#cosjuyqntc .gt_left {
   text-align: left;
 }
 
-#cqdsoivzni .gt_center {
+#cosjuyqntc .gt_center {
   text-align: center;
 }
 
-#cqdsoivzni .gt_right {
+#cosjuyqntc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#cqdsoivzni .gt_font_normal {
+#cosjuyqntc .gt_font_normal {
   font-weight: normal;
 }
 
-#cqdsoivzni .gt_font_bold {
+#cosjuyqntc .gt_font_bold {
   font-weight: bold;
 }
 
-#cqdsoivzni .gt_font_italic {
+#cosjuyqntc .gt_font_italic {
   font-style: italic;
 }
 
-#cqdsoivzni .gt_super {
+#cosjuyqntc .gt_super {
   font-size: 65%;
 }
 
-#cqdsoivzni .gt_footnote_marks {
+#cosjuyqntc .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#cqdsoivzni .gt_asterisk {
+#cosjuyqntc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#cqdsoivzni .gt_indent_1 {
+#cosjuyqntc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#cqdsoivzni .gt_indent_2 {
+#cosjuyqntc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#cqdsoivzni .gt_indent_3 {
+#cosjuyqntc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#cqdsoivzni .gt_indent_4 {
+#cosjuyqntc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#cqdsoivzni .gt_indent_5 {
+#cosjuyqntc .gt_indent_5 {
   text-indent: 25px;
 }
 
-#cqdsoivzni .katex-display {
+#cosjuyqntc .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#cqdsoivzni div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#cosjuyqntc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2072,25 +1563,25 @@ Studying racial profiling in the DMV area has the potential to reveal important 
 </table>
 </div>
 ---
-# Analysis Pt. 2
+# Highlighted Rows = Whites Being Searched the Most in That Year
 
-<div id="omjtcgedmc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#omjtcgedmc table {
+<div id="hgjkfxxxyj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#hgjkfxxxyj table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#omjtcgedmc thead, #omjtcgedmc tbody, #omjtcgedmc tfoot, #omjtcgedmc tr, #omjtcgedmc td, #omjtcgedmc th {
+#hgjkfxxxyj thead, #hgjkfxxxyj tbody, #hgjkfxxxyj tfoot, #hgjkfxxxyj tr, #hgjkfxxxyj td, #hgjkfxxxyj th {
   border-style: none;
 }
 
-#omjtcgedmc p {
+#hgjkfxxxyj p {
   margin: 0;
   padding: 0;
 }
 
-#omjtcgedmc .gt_table {
+#hgjkfxxxyj .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2116,12 +1607,12 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-left-color: #D3D3D3;
 }
 
-#omjtcgedmc .gt_caption {
+#hgjkfxxxyj .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#omjtcgedmc .gt_title {
+#hgjkfxxxyj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2133,7 +1624,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-width: 0;
 }
 
-#omjtcgedmc .gt_subtitle {
+#hgjkfxxxyj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2145,7 +1636,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-top-width: 0;
 }
 
-#omjtcgedmc .gt_heading {
+#hgjkfxxxyj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2157,13 +1648,13 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#omjtcgedmc .gt_bottom_border {
+#hgjkfxxxyj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#omjtcgedmc .gt_col_headings {
+#hgjkfxxxyj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2178,7 +1669,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#omjtcgedmc .gt_col_heading {
+#hgjkfxxxyj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2198,7 +1689,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   overflow-x: hidden;
 }
 
-#omjtcgedmc .gt_column_spanner_outer {
+#hgjkfxxxyj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2210,15 +1701,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 4px;
 }
 
-#omjtcgedmc .gt_column_spanner_outer:first-child {
+#hgjkfxxxyj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#omjtcgedmc .gt_column_spanner_outer:last-child {
+#hgjkfxxxyj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#omjtcgedmc .gt_column_spanner {
+#hgjkfxxxyj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2230,11 +1721,11 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   width: 100%;
 }
 
-#omjtcgedmc .gt_spanner_row {
+#hgjkfxxxyj .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#omjtcgedmc .gt_group_heading {
+#hgjkfxxxyj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2260,7 +1751,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   text-align: left;
 }
 
-#omjtcgedmc .gt_empty_group_heading {
+#hgjkfxxxyj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2275,15 +1766,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   vertical-align: middle;
 }
 
-#omjtcgedmc .gt_from_md > :first-child {
+#hgjkfxxxyj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#omjtcgedmc .gt_from_md > :last-child {
+#hgjkfxxxyj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#omjtcgedmc .gt_row {
+#hgjkfxxxyj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2302,7 +1793,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   overflow-x: hidden;
 }
 
-#omjtcgedmc .gt_stub {
+#hgjkfxxxyj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2315,7 +1806,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#omjtcgedmc .gt_stub_row_group {
+#hgjkfxxxyj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2329,15 +1820,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   vertical-align: top;
 }
 
-#omjtcgedmc .gt_row_group_first td {
+#hgjkfxxxyj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#omjtcgedmc .gt_row_group_first th {
+#hgjkfxxxyj .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#omjtcgedmc .gt_summary_row {
+#hgjkfxxxyj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2347,16 +1838,16 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#omjtcgedmc .gt_first_summary_row {
+#hgjkfxxxyj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#omjtcgedmc .gt_first_summary_row.thick {
+#hgjkfxxxyj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#omjtcgedmc .gt_last_summary_row {
+#hgjkfxxxyj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2366,7 +1857,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#omjtcgedmc .gt_grand_summary_row {
+#hgjkfxxxyj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2376,7 +1867,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#omjtcgedmc .gt_first_grand_summary_row {
+#hgjkfxxxyj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2386,7 +1877,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-top-color: #D3D3D3;
 }
 
-#omjtcgedmc .gt_last_grand_summary_row_top {
+#hgjkfxxxyj .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2396,11 +1887,11 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#omjtcgedmc .gt_striped {
+#hgjkfxxxyj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#omjtcgedmc .gt_table_body {
+#hgjkfxxxyj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2409,7 +1900,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#omjtcgedmc .gt_footnotes {
+#hgjkfxxxyj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2423,7 +1914,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#omjtcgedmc .gt_footnote {
+#hgjkfxxxyj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2432,7 +1923,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#omjtcgedmc .gt_sourcenotes {
+#hgjkfxxxyj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2446,7 +1937,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#omjtcgedmc .gt_sourcenote {
+#hgjkfxxxyj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2454,72 +1945,72 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#omjtcgedmc .gt_left {
+#hgjkfxxxyj .gt_left {
   text-align: left;
 }
 
-#omjtcgedmc .gt_center {
+#hgjkfxxxyj .gt_center {
   text-align: center;
 }
 
-#omjtcgedmc .gt_right {
+#hgjkfxxxyj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#omjtcgedmc .gt_font_normal {
+#hgjkfxxxyj .gt_font_normal {
   font-weight: normal;
 }
 
-#omjtcgedmc .gt_font_bold {
+#hgjkfxxxyj .gt_font_bold {
   font-weight: bold;
 }
 
-#omjtcgedmc .gt_font_italic {
+#hgjkfxxxyj .gt_font_italic {
   font-style: italic;
 }
 
-#omjtcgedmc .gt_super {
+#hgjkfxxxyj .gt_super {
   font-size: 65%;
 }
 
-#omjtcgedmc .gt_footnote_marks {
+#hgjkfxxxyj .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#omjtcgedmc .gt_asterisk {
+#hgjkfxxxyj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#omjtcgedmc .gt_indent_1 {
+#hgjkfxxxyj .gt_indent_1 {
   text-indent: 5px;
 }
 
-#omjtcgedmc .gt_indent_2 {
+#hgjkfxxxyj .gt_indent_2 {
   text-indent: 10px;
 }
 
-#omjtcgedmc .gt_indent_3 {
+#hgjkfxxxyj .gt_indent_3 {
   text-indent: 15px;
 }
 
-#omjtcgedmc .gt_indent_4 {
+#hgjkfxxxyj .gt_indent_4 {
   text-indent: 20px;
 }
 
-#omjtcgedmc .gt_indent_5 {
+#hgjkfxxxyj .gt_indent_5 {
   text-indent: 25px;
 }
 
-#omjtcgedmc .katex-display {
+#hgjkfxxxyj .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#omjtcgedmc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#hgjkfxxxyj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2563,25 +2054,25 @@ Studying racial profiling in the DMV area has the potential to reveal important 
 </table>
 </div>
 ---
-# Analysis Pt. 2
+# Highlighted Rows = Others Being Searched the Most in That Year
 
-<div id="ecuuaojuro" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ecuuaojuro table {
+<div id="xhcwdhzhpf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xhcwdhzhpf table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ecuuaojuro thead, #ecuuaojuro tbody, #ecuuaojuro tfoot, #ecuuaojuro tr, #ecuuaojuro td, #ecuuaojuro th {
+#xhcwdhzhpf thead, #xhcwdhzhpf tbody, #xhcwdhzhpf tfoot, #xhcwdhzhpf tr, #xhcwdhzhpf td, #xhcwdhzhpf th {
   border-style: none;
 }
 
-#ecuuaojuro p {
+#xhcwdhzhpf p {
   margin: 0;
   padding: 0;
 }
 
-#ecuuaojuro .gt_table {
+#xhcwdhzhpf .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2607,12 +2098,12 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-left-color: #D3D3D3;
 }
 
-#ecuuaojuro .gt_caption {
+#xhcwdhzhpf .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ecuuaojuro .gt_title {
+#xhcwdhzhpf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2624,7 +2115,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-width: 0;
 }
 
-#ecuuaojuro .gt_subtitle {
+#xhcwdhzhpf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2636,7 +2127,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-top-width: 0;
 }
 
-#ecuuaojuro .gt_heading {
+#xhcwdhzhpf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2648,13 +2139,13 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#ecuuaojuro .gt_bottom_border {
+#xhcwdhzhpf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ecuuaojuro .gt_col_headings {
+#xhcwdhzhpf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2669,7 +2160,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#ecuuaojuro .gt_col_heading {
+#xhcwdhzhpf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2689,7 +2180,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   overflow-x: hidden;
 }
 
-#ecuuaojuro .gt_column_spanner_outer {
+#xhcwdhzhpf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2701,15 +2192,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 4px;
 }
 
-#ecuuaojuro .gt_column_spanner_outer:first-child {
+#xhcwdhzhpf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ecuuaojuro .gt_column_spanner_outer:last-child {
+#xhcwdhzhpf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ecuuaojuro .gt_column_spanner {
+#xhcwdhzhpf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2721,11 +2212,11 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   width: 100%;
 }
 
-#ecuuaojuro .gt_spanner_row {
+#xhcwdhzhpf .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ecuuaojuro .gt_group_heading {
+#xhcwdhzhpf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2751,7 +2242,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   text-align: left;
 }
 
-#ecuuaojuro .gt_empty_group_heading {
+#xhcwdhzhpf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2766,15 +2257,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   vertical-align: middle;
 }
 
-#ecuuaojuro .gt_from_md > :first-child {
+#xhcwdhzhpf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ecuuaojuro .gt_from_md > :last-child {
+#xhcwdhzhpf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ecuuaojuro .gt_row {
+#xhcwdhzhpf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2793,7 +2284,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   overflow-x: hidden;
 }
 
-#ecuuaojuro .gt_stub {
+#xhcwdhzhpf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2806,7 +2297,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#ecuuaojuro .gt_stub_row_group {
+#xhcwdhzhpf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2820,15 +2311,15 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   vertical-align: top;
 }
 
-#ecuuaojuro .gt_row_group_first td {
+#xhcwdhzhpf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ecuuaojuro .gt_row_group_first th {
+#xhcwdhzhpf .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ecuuaojuro .gt_summary_row {
+#xhcwdhzhpf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2838,16 +2329,16 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#ecuuaojuro .gt_first_summary_row {
+#xhcwdhzhpf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ecuuaojuro .gt_first_summary_row.thick {
+#xhcwdhzhpf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ecuuaojuro .gt_last_summary_row {
+#xhcwdhzhpf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2857,7 +2348,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#ecuuaojuro .gt_grand_summary_row {
+#xhcwdhzhpf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2867,7 +2358,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#ecuuaojuro .gt_first_grand_summary_row {
+#xhcwdhzhpf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2877,7 +2368,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-top-color: #D3D3D3;
 }
 
-#ecuuaojuro .gt_last_grand_summary_row_top {
+#xhcwdhzhpf .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2887,11 +2378,11 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#ecuuaojuro .gt_striped {
+#xhcwdhzhpf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ecuuaojuro .gt_table_body {
+#xhcwdhzhpf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2900,7 +2391,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-bottom-color: #D3D3D3;
 }
 
-#ecuuaojuro .gt_footnotes {
+#xhcwdhzhpf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2914,7 +2405,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#ecuuaojuro .gt_footnote {
+#xhcwdhzhpf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2923,7 +2414,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#ecuuaojuro .gt_sourcenotes {
+#xhcwdhzhpf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2937,7 +2428,7 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   border-right-color: #D3D3D3;
 }
 
-#ecuuaojuro .gt_sourcenote {
+#xhcwdhzhpf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2945,72 +2436,72 @@ Studying racial profiling in the DMV area has the potential to reveal important 
   padding-right: 5px;
 }
 
-#ecuuaojuro .gt_left {
+#xhcwdhzhpf .gt_left {
   text-align: left;
 }
 
-#ecuuaojuro .gt_center {
+#xhcwdhzhpf .gt_center {
   text-align: center;
 }
 
-#ecuuaojuro .gt_right {
+#xhcwdhzhpf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ecuuaojuro .gt_font_normal {
+#xhcwdhzhpf .gt_font_normal {
   font-weight: normal;
 }
 
-#ecuuaojuro .gt_font_bold {
+#xhcwdhzhpf .gt_font_bold {
   font-weight: bold;
 }
 
-#ecuuaojuro .gt_font_italic {
+#xhcwdhzhpf .gt_font_italic {
   font-style: italic;
 }
 
-#ecuuaojuro .gt_super {
+#xhcwdhzhpf .gt_super {
   font-size: 65%;
 }
 
-#ecuuaojuro .gt_footnote_marks {
+#xhcwdhzhpf .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ecuuaojuro .gt_asterisk {
+#xhcwdhzhpf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ecuuaojuro .gt_indent_1 {
+#xhcwdhzhpf .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ecuuaojuro .gt_indent_2 {
+#xhcwdhzhpf .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ecuuaojuro .gt_indent_3 {
+#xhcwdhzhpf .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ecuuaojuro .gt_indent_4 {
+#xhcwdhzhpf .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ecuuaojuro .gt_indent_5 {
+#xhcwdhzhpf .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ecuuaojuro .katex-display {
+#xhcwdhzhpf .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ecuuaojuro div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#xhcwdhzhpf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

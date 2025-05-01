@@ -85,6 +85,20 @@ custom_colors <- c(
   "white" = "#ffcc90",
   "other" = "#de425b"
 )
+
+custom_colors2 <- c(
+  "2006" = "#AEC6CF",
+  "2007" = "#FFB347",
+  "2008" = "#B39EB5",
+  "2009" = "#77DD77",
+  "2010" = "#FF6961",
+  "2011" = "#FDFD96",
+  "2012" = "#CFCFC4",
+  "2013" = "#F49AC2",
+  "2014" = "#B0E0E6",
+  "2015" = "#E6E6FA",
+  "2016" = "#D9EAD3"
+)
 ```
 
 # Overview
@@ -113,6 +127,8 @@ Studying racial profiling in the DMV area has the potential to reveal important 
     
     - The Project collects traffic stop information provided by state and local police departments in 42 states, wherever it was made available.
     
+    -  Each jurisdiction provided stop data in idiosyncratic formats with varying levels of specificity due to the reporting requirements of each police department.
+    
     
   - **What was done with it**
   
@@ -120,9 +136,19 @@ Studying racial profiling in the DMV area has the potential to reveal important 
     
     - 8,505,026 observations
     
+  - **Summary** 
+  
+    - *Unit of Analysis:* traffic stops
+    
+    - *Independent Variable:* Subject's Race
+    
+    - *Dependent Variable:* Search Conducted
+    
+    - *Time Period:* 2006-2016
+    
     
 ---
-# Analysis Pt. 1
+# Hispanics Are Searched More Frequently
 
 ```{r, fig.width = 5, fig.height = 2.2, dpi = 300}
 # profiling graph -----
@@ -131,6 +157,8 @@ profiling <- dmv %>%
   summarize (
     search_conducted = mean(search_conducted, na.rm = TRUE)
     ) %>%
+  arrange(desc(search_conducted)) %>%
+  mutate(subject_race = factor(subject_race, levels = subject_race)) %>%
   ggplot(aes(x = search_conducted, y = subject_race, fill = subject_race)) + 
   geom_bar(stat = "identity", color = "black") +
   labs(
@@ -153,61 +181,7 @@ profiling
 ```
 
 ---
-# Analysis Pt. 1
-
-```{r}
-# regression models -----
-
-## making data race-specific
-overall <- dmv %>%
-  mutate(
-    subject_race = if_else(subject_race == "white", "white", "non-white")
-  )
-
-asian <- dmv %>%
-  filter(subject_race == c("asian/pacific islander", "white"))
-
-black <- dmv %>%
-  filter(subject_race == c("black", "white"))
-
-hispanic <- dmv %>%
-  filter(subject_race == c("hispanic", "white"))
-
-other <- dmv %>%
-  filter(subject_race == c("other", "white"))
-
-## estimates
-mods <- 
-  list(
-    "Overall" = lm(search_conducted ~ subject_race, overall),
-    "Asian/pacific islander" = lm(search_conducted ~ subject_race, asian),
-    "Black" = lm(search_conducted ~ subject_race, black),
-    "Hispanic" = lm(search_conducted ~ subject_race, hispanic),
-    "Other" = lm(search_conducted ~ subject_race, other)
-  )
-
-## displaying all models
-table <- modelsummary(
-  mods,
-  coef_rename = c(
-    "subject_racewhite" = "Race",
-    "subject_raceother" = "Other"
-  ),
-  gof_map = c('nobs'),
-  output = 'gt',
-  star = TRUE
-)
-
-## Add header above the table
-table %>%
-  tab_spanner(
-    label = "Searches",
-    columns = c(`Overall`, `Asian/pacific islander`, `Black`, `Hispanic`, `Other`)
-  )
-```
-
----
-# Analysis Pt. 2
+# What Does A Comparison By Year Tell Us?
 
 ``` {r, fig.width = 5, fig.height = 2.2, dpi = 300}
 # across years graph-----
@@ -216,27 +190,31 @@ profiling_year <- dmv %>%
   summarize(
     search_conducted = mean(search_conducted, na.rm = TRUE)
   ) %>%
-  ggplot(aes(x = factor(year), y = search_conducted, fill = subject_race)) +
+  ggplot(aes(x = subject_race, y = search_conducted, fill = factor(year))) +
   geom_bar(stat = "identity", position = "dodge", color = "black") +
   labs(
     title = "% Search Conducted by Race and Year",
     x = "",
     y = "Mean Search Conducted",
-    fill = "Race"
+    fill = "Year"
   ) +
   scale_y_continuous(
     labels = scales::percent_format(scale = 100),
     breaks = seq(0, 0.08, by = 0.02),
     limits = c(0, 0.08)) +
   theme_classic2 +
-  scale_fill_manual(values = custom_colors) +
-  theme(legend.key.size = unit(0.5, "cm"))
+  scale_fill_manual(values = custom_colors2) +
+  theme(
+    legend.position = "right",
+    legend.direction = "vertical",
+    legend.box = "vertical",
+    legend.key.size = unit(0.25, "cm"))
 
 profiling_year
 ```
 
 ---
-# Analysis Pt. 2
+# Highlighted Rows = Asians/Pacific Islanders Being Searched the Most in That Year
 
 ``` {r}
 # across years table-----
@@ -294,7 +272,7 @@ profiling_year <- profiling_year_data %>%
 profiling_year
 ```
 ---
-# Analysis Pt. 2
+# Highlighted Rows = Blacks Being Searched the Most in That Year
 
 ``` {r}
 ## Create the table
@@ -342,7 +320,7 @@ profiling_year <- profiling_year_data %>%
 profiling_year
 ```
 ---
-# Analysis Pt. 2
+# Highlighted Rows = Hispanics Being Searched the Most in That Year
 
 ``` {r}
 ## Create the table
@@ -390,7 +368,7 @@ profiling_year <- profiling_year_data %>%
 profiling_year
 ```
 ---
-# Analysis Pt. 2
+# Highlighted Rows = Whites Being Searched the Most in That Year
 
 ``` {r}
 ## Create the table
@@ -438,7 +416,7 @@ profiling_year <- profiling_year_data %>%
 profiling_year
 ```
 ---
-# Analysis Pt. 2
+# Highlighted Rows = Others Being Searched the Most in That Year
 
 ``` {r}
 ## Create the table
